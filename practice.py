@@ -131,3 +131,61 @@ print('Player 2 played: '+ str(P2_LIST))
 
 
 
+'''
+
+FUNCTIONS2PRACTICEUSING:
+
+round(value, decimal places =0)
+sum()
+split('delimtier')
+
+e.g. 
+'''
+
+'''
+l = [random.randint(0,100) for i in range(30)] 
+print(l)
+
+print(sum(l))
+
+s = "This is a random string that could contain valuable information that you want to tokenize data. This will be split based on a space delimeter."
+s2=s.split(" ")
+print(s2)
+
+# This list method is very important in AI and NLP e.g. sentiment analysis. 
+# 
+'''
+
+
+# SENTILYZER - MY TOY SENTIMENT ANALYZER:
+
+# Any sample text as a tokenized list. 
+sample="The question is witch which is which ?"
+sample=sample.split(" ")
+# Any list of known sentiment.
+test=["which","witch"]
+'''
+sentilyze() iterates over the sample text, checking if a word in the sample is the list of known sentiment. 
+'''
+
+def sentilyze(x,y):
+	a=0 
+	for w in x:
+		if w in y:
+			a+=1	
+		else:
+			pass
+	print(a)
+sentilyze(sample,test)
+
+#
+
+
+
+
+
+
+
+
+
+
