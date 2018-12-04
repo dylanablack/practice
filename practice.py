@@ -84,6 +84,16 @@ for i in d:
 		pass
 print(c)
 
+
+
+#EX. 6 @ practivepython.org
+
+user_str=input("Enter a string to check if palindrome: ")
+rvrs_user_string=user_str[::-1]
+if user_str==rvrs_user_string:
+	print("This word is a palindrome!")
+else:
+	print("This word is NOT a palindrome!")
 '''
 '''
 #EX. 7 @ practivepython.org
@@ -127,12 +137,34 @@ print('The plays\n')
 
 print('Player 1 played: '+ str(P1_LIST))
 print('Player 2 played: '+ str(P2_LIST))
-''' 
 
 
+#EX. 9 @ practivepython.org
+
+
+for i in range(10):
+	rand_number=random.randint(1,9)
+	rand_guess=int(input("\nEnter a number between 1-9: \n"))
+	if rand_number==rand_guess:
+		print("\nYou guessed correctly!\n")
+	elif rand_guess>rand_number:
+		print("\nYour guess was too high!\n")
+	elif rand_guess<rand_number:
+		print("\nYour guess was too low!\n")
+	else:
+		pass
 
 '''
 
+
+
+
+
+
+
+
+
+''' 
 FUNCTIONS2PRACTICEUSING:
 
 round(value, decimal places =0)
@@ -140,7 +172,13 @@ sum()
 split('delimtier')
 
 e.g. 
+
+
 '''
+
+
+
+
 
 '''
 l = [random.randint(0,100) for i in range(30)] 
@@ -155,36 +193,6 @@ print(s2)
 # This list method is very important in AI and NLP e.g. sentiment analysis. 
 # 
 '''
-
-
-# SENTILYZER - MY TOY SENTIMENT ANALYZER:
-
-# Any sample text as a tokenized list. 
-sample="The question is witch which is which ?"
-sample=sample.split(" ")
-# Any list of known sentiment.
-test=["which","witch"]
-'''
-sentilyze() iterates over the sample text, checking if a word in the sample is the list of known sentiment. 
-'''
-
-def sentilyze(x,y):
-	a=0 
-	for w in x:
-		if w in y:
-			a+=1	
-		else:
-			pass
-	print(a)
-sentilyze(sample,test)
-
-#
-
-
-
-
-
-
 
 
 
