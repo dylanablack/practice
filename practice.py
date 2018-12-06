@@ -19,7 +19,7 @@ EX.2 @ practivepython.org
 num=input("Please enter a number: ")
 
 if int(num)%2==0:
-	print("This number is even :)")
+	print("This number is even:"))
 else:
 	print("This number is odd :(")
 
@@ -96,10 +96,15 @@ else:
 	print("This word is NOT a palindrome!")
 '''
 '''
+
+
 #EX. 7 @ practivepython.org
 
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 b=[print(n) for n in a if int(n)%2==0]
+
+
+
 
 
 #EX. 8 @ practivepython.org
@@ -157,6 +162,44 @@ for i in range(10):
 '''
 
 
+#EX. 10 @ practivepython.org
+# asks user for a number then determines whether it is a prime number. 
+
+#def PrimeSearch(num):
+
+
+
+
+
+
+#EX. 11 @ practivepython.org
+
+# rand_list=[random.randint(1,100) for x in range(30)]
+# print(rand_list)
+# rand_list_2=[rand_list[0],rand_list[-1]]
+# print(rand_list_2)
+# rand_list_2=rand_list_2*15
+# print(rand_list_2)
+# rand_list_2=random.shuffle(rand_list_2)
+# print(rand_list_2)
+
+
+
+#EX. 13 @ practivepython.org
+# Working with set()
+
+my_list=[random.randint(1,100) for n in range(15)]
+a=[1,1,1,1,5,5,5,5,7,7,7,7]
+def NoDuplicate(list):
+	list=set(list)
+	return list
+
+print(NoDuplicate(my_list))
+print(NoDuplicate(a))
+
+
+
+#EX. 14 @ practivepython.org
 
 
 
@@ -164,6 +207,22 @@ for i in range(10):
 
 
 
+
+#EX. 18 @ practivepython.org
+
+
+''' random gen of 4 digit num. for eery correct guess in correct location they have a cow. for every wrong they get a bull. 
+
+
+
+def square(num):
+	return num*num 
+
+if __name__ == "__main__":
+	user_num = int(input("Give me a number: "))
+	print(square(user_num))
+
+'''
 ''' 
 FUNCTIONS2PRACTICEUSING:
 
@@ -193,6 +252,46 @@ print(s2)
 # This list method is very important in AI and NLP e.g. sentiment analysis. 
 # 
 '''
+
+
+# Set problems
+# Sets are kind of like lists but remove duplicate values. 
+
+
+# s1=set([1,1,2,3,4,5,5]) # alternately: s1={1,2,3,4,5} ; to create empty set: set()
+# print(s1)
+
+# s1.add(6)
+# print(s1)
+
+# s1.update([6,7,8,9,10])
+# print(s1)
+
+# s1=s1.remove(9)
+# print(s1)
+
+
+# # But what  can we do with sets()  ?
+
+# s1={1,2,3}
+# s2={2,3,4}
+# s3={3,4,5}
+
+# s4 = s1.intersection(s2,s3)
+# s5 = s1.difference(s2)
+# print(s4)
+# print(s5)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
