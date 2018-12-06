@@ -287,9 +287,20 @@ print(s2)
 
 
 
+#EX. 20 @ practivepython.org
 
 
+rlist=[random.randint(1,100) for n in range(20)]
+rnum=int(input("Enter a number between 1-100: "))
 
+def func(list,num):
+	list=set(list)
+	if num in list:
+		return True
+	else:
+		return False
+print(func(rlist,rnum))
+print(rlist)
 
 
 
