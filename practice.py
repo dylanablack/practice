@@ -188,14 +188,14 @@ for i in range(10):
 #EX. 13 @ practivepython.org
 # Working with set()
 
-my_list=[random.randint(1,100) for n in range(15)]
-a=[1,1,1,1,5,5,5,5,7,7,7,7]
-def NoDuplicate(list):
-	list=set(list)
-	return list
+# my_list=[random.randint(1,100) for n in range(15)]
+# a=[1,1,1,1,5,5,5,5,7,7,7,7]
+# def NoDuplicate(list):
+# 	list=set(list)
+# 	return list
 
-print(NoDuplicate(my_list))
-print(NoDuplicate(a))
+# print(NoDuplicate(my_list))
+# print(NoDuplicate(a))
 
 
 
@@ -290,20 +290,75 @@ print(s2)
 #EX. 20 @ practivepython.org
 
 
-rlist=[random.randint(1,100) for n in range(20)]
-rnum=int(input("Enter a number between 1-100: "))
+# rlist=[random.randint(1,100) for n in range(20)]
+# rnum=int(input("Enter a number between 1-100: "))
 
-def func(list,num):
-	list=set(list)
-	if num in list:
-		return True
-	else:
-		return False
-print(func(rlist,rnum))
-print(rlist)
+# def func(list,num):
+# 	list=set(list)
+# 	if num in list:
+# 		return True
+# 	else:
+# 		return False
 
-
-
+# print(func(rlist,rnum))
+# print(rlist)
 
 
+#EX. 21 @ practivepython.org
+# writing to a file
+# be sure to close a file after creating and modifying it. 
+# 
 
+# with open('example.txt','w') as open_file:
+# 	open_file.write('The first string...')
+# 	# open_file.close() is not necessary because of the with statement
+
+
+#EX. 25 @ practivepython.org
+# Not working
+
+computer_guess=random.randint(1,100)
+correct=input("\nWas {} the number you were thinking of? ".format(computer_guess)).lower()
+if correct == "no":
+	while True:
+		above_below=input("Was the number above or below {}? ".format(computer_guess)).lower()
+		if above_below == "above":
+			computer_guess=random.randint(computer_guess,100)
+		if above_below == "below":
+			computer_guess=random.randint(1,computer_guess)
+		else:
+			print("You got it!")
+			break
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#EX. 27 @ practivepython.org
+
+# square=" --- \n|   |\n --- "
+
+# def print_horiz_line():
+# 	print(" --- " * board_size)
+
+# def print_vert_line():
+# 	print("|    " * (board_size + 1))
+
+# if __name__ == "__main__":
+# 	board_size=int(input('What size game board? '))
+
+# 	for i in range(board_size):
+# 		print_horiz_line()
+# 		print_vert_line()
+# 	print_horiz_line()
