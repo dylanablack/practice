@@ -315,25 +315,66 @@ print(s2)
 
 
 #EX. 25 @ practivepython.org
-# Not working
 
-computer_guess=random.randint(1,100)
-correct=input("\nWas {} the number you were thinking of? ".format(computer_guess)).lower()
-if correct == "no":
-	while True:
-		above_below=input("Was the number above or below {}? ".format(computer_guess)).lower()
-		if above_below == "above":
-			computer_guess=random.randint(computer_guess,100)
-		if above_below == "below":
-			computer_guess=random.randint(1,computer_guess)
-		else:
-			print("You got it!")
-			break
+# MINIMUM = 0 
+# MAXIMUM = 100 
+# NUMBER = random.randint(MINIMUM,MAXIMUM)
+# TRY = 0 
+# RUNNING = True
+# ANSWER = None
+
+# while RUNNING:
+# 	print("Is it {}? ".format(str(NUMBER)))
+# 	ANSWER = input()
+# 	# if 'no' in ANSWER.lower() and "lower" in ANSWER.lower():
+# 	# 	NUMBER -= random.randint(1,4)
+# 	# elif 'no' in ANSWER.lower() and "higher" in ANSWER.lower():
+# 	# 	NUMBER += random.randint(1,4)
+# 	if ANSWER.lower() == 'no':
+# 		print("Higher or lower?")
+# 		ANSWER = input()
+# 		if ANSWER.lower() == 'higher':
+# 			NUMBER += random.randint(1,4)
+# 		elif ANSWER.lower() == 'lower':
+# 			NUMBER -= random.randint(1,4)
+# 	if ANSWER.lower() == 'yes':
+# 		if TRY < 2:
+# 			print("Yes! It only took me {}".format(str(TRY)))
+# 		elif TRY < 2 and TRY < 10:
+# 			print("Pretty well for a robot, {} tries".format(str(TRY)))
+# 		else:
+# 			print("That's so bad, {} tries.".format(str(TRY)))
+# 		RUNNING = False
+# 	TRY += 1
+
+# print("GG") 
 
 		
+# binary search 
 
+# RUNNING = True
 
+# a = [1,3,5,4,2,3,5,6,8,9,19]
+# a = set(a)
+# print(a)
+# print(int(len(a)/2))
 
+# my_list = [random.randint(1,100) for n in range(1000)]
+# my_list = set(my_list)
+# my_list = list(my_list)
+
+# target = 58
+# guess = 0
+
+# while not (len(my_list)==1 or guess==target):
+# 	center_index = int(len(my_list)/2)
+# 	guess = my_list[center_index]
+# 	if guess > target:
+# 		my_list=my_list[:center_index]
+# 	elif guess < target:
+# 		my_list=my_list[center_index:]
+# 	if guess == target:
+# 		print("Nailed it!")
 
 
 
@@ -362,3 +403,58 @@ if correct == "no":
 # 		print_horiz_line()
 # 		print_vert_line()
 # 	print_horiz_line()
+
+
+
+
+#EX. 28 @ practivepython.org
+
+def findMax(num1,num2,num3):
+	# l=[]
+	# l = []
+	# l.append(num1)
+	# l.append(num2)
+	# l.append(num3)
+	# print(max(l))
+	print(max(num1,num2,num3))
+
+findMax(1,2,3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
